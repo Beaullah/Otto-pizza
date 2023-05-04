@@ -1,13 +1,121 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: italic;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Nav-css {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Nav-css img {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  scroll-behavior: auto green;
+}
+.change {
+  background-color: #507f70;
+}
+.Nav-css::-webkit-scrollbar {
+  background-color: #507f70;
+}
+.Overlay {
+  position: absolute;
+  top: 0;
+  down: 0;
+  height: 1030px;
+  width: 100%;
+  background-color: rgba(4, 4, 4, 0.618);
+  color: white;
+}
+.text-overlay {
+  position: relative;
+  top: 300px;
+  left: 800px;
+
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+}
+.menu-text {
+  padding-top: 50px;
+}
+.Menu-css {
+  background-color: #507f70;
+  color: white;
+}
+.text-menu {
+  height: 500px;
+  width: 500px;
+  margin-top: 0px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  left: 700px;
+}
+.slide-show {
+  float: left;
+}
+.slide-show img {
+  height: 300px;
+  width: 300px;
+}
+.voch {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.reservation {
+  background-color: #507f70;
+  padding: 50px;
+  color: #ffff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.time {
+  background-color: rgba(245, 245, 245, 0.812);
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact {
+  background-color: #507f70;
+  color: white;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-overlay button {
+  padding: 20px;
+  border: 2px solid #507f70;
+  gap: 400px;
 }
