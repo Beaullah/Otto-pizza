@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "./Menu";
 import { WiTime4 } from "react-icons/wi";
 import { AiFillPhone, AiFillMail } from "react-icons/ai";
+import Carousel from "react-bootstrap/Carousel";
 
 const Video = () => {
   const css = {

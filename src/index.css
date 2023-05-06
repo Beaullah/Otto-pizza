@@ -8,6 +8,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 h1,
 h2,
 h3,
@@ -80,7 +83,6 @@ code {
   left: 700px;
 }
 .slide-show {
-  float: left;
 }
 .slide-show img {
   height: 300px;
@@ -115,7 +117,4 @@ code {
   text-align: center;
 }
 .text-overlay button {
-  padding: 20px;
-  border: 2px solid #507f70;
-  gap: 400px;
 }
