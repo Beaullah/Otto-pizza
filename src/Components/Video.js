@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "./Menu";
 import { WiTime4 } from "react-icons/wi";
-import { AiFillPhone, AiFillMail } from "react-icons/ai";
+import {
+  AiFillPhone,
+  AiFillFacebook,
+  AiOutlineInstagram,
+  AiFillMail,
+} from "react-icons/ai";
 import Carousel from "react-bootstrap/Carousel";
 
 const Video = () => {
@@ -26,7 +31,7 @@ const Video = () => {
           <button>Menu and app</button>
         </div>
       </div>
-      <video style={css} src="3154057140.mp4" autoPlay loop />
+      <video style={css} src="3154057140.mp4" controls loops />
       <div className="Menu-css">
         <div className="text-menu">
           <h3>Menu</h3>
@@ -54,14 +59,45 @@ const Video = () => {
         </div>
       </div>
       <div className="slide-show">
-        <img src="otto2.webp" />
-        <img src="otto1.jpg" />
-        <img src="otto3.webp" />
-        <img src="otto4.jpg" />
-        <img src="otto5.jpg" />
-        <img src="otto6.webp" />
-        <img src="otto7.jpg" />
-        <img src="otto8.jpg" />
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block h-80 w-80"
+              src="otto2.webp"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block h-30 w-100"
+              src="otto7.jpg"
+              alt="Second slide"
+            />
+
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block h-80 w-80"
+              src="otto8.jpg"
+              alt="Third slide"
+            />
+
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
       <div className="voch">
         <h2>Gift vouchers</h2>
@@ -109,6 +145,18 @@ const Video = () => {
         <AiFillPhone /> 0551442563 <br />
         <AiFillMail /> n@gmail.com
       </div>
+      <footer>
+        <div className="icons">
+          <AiFillFacebook />
+          <AiOutlineInstagram />
+        </div>
+        <div className="copyright">
+          <p>Copyright © 2023 China Red Group. All rights reserved.</p>
+        </div>
+        <div className="copyright">
+          <p>Privacy policy</p>
+        </div>
+      </footer>
     </div>
   );
 };

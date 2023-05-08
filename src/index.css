@@ -28,9 +28,11 @@ code {
 .Nav-css {
   position: fixed;
   top: 0;
+  right: 0;
   display: flex;
+  opacity: 1;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -84,10 +86,10 @@ code {
 }
 .slide-show {
 }
-.slide-show img {
-  height: 300px;
-  width: 300px;
-}
+/* .slide-show img {
+  height: 500px;
+  width: 500px;
+} */
 .voch {
   justify-content: center;
   align-items: center;
@@ -117,4 +119,9 @@ code {
   text-align: center;
 }
 .text-overlay button {
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px;
 }
