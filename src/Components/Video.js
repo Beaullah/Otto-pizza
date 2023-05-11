@@ -31,7 +31,7 @@ const Video = () => {
           <button>Menu and app</button>
         </div>
       </div>
-      <video style={css} src="3154057140.mp4" controls loops />
+      <video style={css} src="3154057140.mp4" autoPlay muted loops />
       <div className="Menu-css">
         <div className="text-menu">
           <h3>Menu</h3>
@@ -62,14 +62,10 @@ const Video = () => {
         <Carousel>
           <Carousel.Item>
             <img
-              className="d-block h-80 w-80"
+              className="d-block h-30 w-100"
               src="otto2.webp"
               alt="First slide"
             />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
@@ -77,25 +73,13 @@ const Video = () => {
               src="otto7.jpg"
               alt="Second slide"
             />
-
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block h-80 w-80"
+              className="d-block h-80 w-100"
               src="otto8.jpg"
               alt="Third slide"
             />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>

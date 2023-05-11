@@ -30,8 +30,10 @@ code {
   top: 0;
   right: 0;
   display: flex;
+  padding: 20px 20px;
   opacity: 1;
   width: 100%;
+  z-index: 1000;
   justify-content: space-around;
   align-items: center;
 }
